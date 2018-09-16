@@ -33,8 +33,8 @@ import gin.tf
 slim = tf.contrib.slim
 
 
-OBSERVATION_SHAPE = 84  # Size of a downscaled Atari 2600 frame.
-STACK_SIZE = 4  # Number of frames in the state stack.
+OBSERVATION_SHAPE = [4,1]  # Size of a downscaled Atari 2600 frame.
+STACK_SIZE = 1  # Number of frames in the state stack.
 
 
 def linearly_decaying_epsilon(decay_period, step, warmup_steps, epsilon):
